@@ -36,6 +36,7 @@ class Station:
     seafloor_density_kg_m3: float
     gravity_m_s2: float
     calibration_threshold_kpa: float | None          # None = "auto"
+    planned_deployment: str | None
     gauges: dict
     auxiliary: dict
     notes: list = field(default_factory=list)
@@ -84,6 +85,7 @@ def load(name: str | None = None) -> Station:
                    position=d.get("position", {}), seafloor_density_kg_m3=float(d.get("seafloor_density_kg_m3", 1030.0)),
                    gravity_m_s2=float(d.get("gravity_m_s2", 9.806)),
                    calibration_threshold_kpa=None if thr in (None, "auto") else float(thr),
+                   planned_deployment=d.get("planned_deployment"),
                    gauges=d["gauges"], auxiliary=d.get("auxiliary", {}), notes=d.get("notes", []))
 
 

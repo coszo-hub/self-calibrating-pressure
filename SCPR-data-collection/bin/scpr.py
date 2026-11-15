@@ -298,7 +298,9 @@ def cmd_stations(args: argparse.Namespace) -> None:
     for s in scpr_station.all_stations():
         cal = paths.ROOT / "calibration" / s.id / "calibrations.csv"
         n = max(0, len(cal.read_text().splitlines()) - 1) // 2 if cal.exists() else 0
-        print(f"{s.id:10s} {s.status:8s} {s.ref_des:10s} deployed {s.deployed}  {s.site}; "
+        when = (f"planned {s.planned_deployment}" if s.status == "planned" and s.planned_deployment
+                else f"deployed {s.deployed}")
+        print(f"{s.id:10s} {s.status:8s} {s.ref_des:10s} {when}  {s.site}; "
               f"{n} calibration event(s) in calibration/{s.id}/")
 
 

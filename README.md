@@ -10,10 +10,10 @@ the drift curve that is removed.
 | Station | Site | OOI reference | Depth | Status | Calibration record |
 |---|---|---|---|---|---|
 | **OO.AXCC1** | Axial Seamount central caldera | SCPRAA301 | 1530 m | active since 2018-07-06 | [`calibration/OO.AXCC1/`](SCPR-data-collection/calibration/OO.AXCC1) |
-| **OO.CZMID** | Mid Slope (MJ01E) | SCPRAB101 | 1238 m | planned (2026-08-22*) | created with the first calibration |
-| **OO.CZOFF** | Oregon Offshore (MJ01F) | SCPRAC102 | 617 m | planned (2026-08-22*) | created with the first calibration |
+| **OO.CZMID** | Mid Slope (MJ01E) | SCPRAB101 | 1238 m | planned (2027 summer) | created with the first calibration |
+| **OO.CZOFF** | Oregon Offshore (MJ01F) | SCPRAC102 | 617 m | planned (2027 summer) | created with the first calibration |
 
-\*from the COSZO channel spreadsheet; dates, positions and coefficients to be confirmed after deployment.
+Positions are from the COSZO channel spreadsheet; dates, positions and coefficients to be confirmed after deployment.
 
 For each station this repository produces:
 
@@ -69,7 +69,7 @@ Everything specific to a station is in one file, `SCPR-data-collection/stations/
 | `network`, `station`, `site` | SEED codes and site name |
 | `status` | `active` (processed daily) or `planned` |
 | `ref_des` | OOI reference designator = piweb file prefix (`SCPRAA301_PARO1_…`) |
-| `deployed`, `exclude_calibrations_before` | first day; calibrations before this date are not used for the drift (deployment-day events are not in thermal equilibrium; default: the day after deployment) |
+| `deployed`, `planned_deployment`, `exclude_calibrations_before` | first day with data (for a planned station a placeholder; `planned_deployment` says when, e.g. "summer 2027"); calibrations before this date are not used for the drift (deployment-day events are not in thermal equilibrium; default: the day after deployment) |
 | `position` | the SCPR's own position (channel coordinates) and its source |
 | `seafloor_density_kg_m3`, `gravity_m_s2` | for the uplift estimate (uplift = −ΔP / ρg) |
 | `calibration_threshold_kpa` | pressure below which a gauge is on the dead-weight tester (AXCC1: 15 400 kPa, between ~15 550 kPa seafloor and ~15 270 kPa dead weight); `"auto"`: 100 kPa below the day's median pressure |
@@ -188,7 +188,7 @@ record of that station. Output (SDS layout, one file per channel-day), under
    includes it, and commit.
 
 That is all: the code has no station-specific values. CZMID and CZOFF are already set up this
-way and need only their deployment details and coefficients.
+way and need only their deployment details and coefficients (deployment planned for summer 2027).
 
 ## Pressure time series
 

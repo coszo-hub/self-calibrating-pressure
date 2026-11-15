@@ -5,7 +5,8 @@
   "status": "planned",
   "ref_des": "SCPRAB101",
   "piweb_base": "http://piweb.ooirsn.uw.edu/scpr/data/",
-  "deployed": "2026-08-22",
+  "deployed": "2027-06-01",
+  "planned_deployment": "summer 2027",
   "exclude_calibrations_before": null,
   "position": {"latitude": 44.479722, "longitude": -125.1525, "elevation_m": -1238,
                "source": "COSZO Instrument Data Channels spreadsheet (approximate; update after the cruise)"},
@@ -25,7 +26,7 @@
     "lvdt2_mm": null
   },
   "notes": [
-    "Planned COSZO station from the COSZO Instrument Data Channels spreadsheet; deployment date, position and all coefficients to be filled in from the instrument documentation after deployment.",
+    "Planned COSZO station (deployment summer 2027; deployed 2027-06-01 is a placeholder for the first day to look for data). Position from the COSZO Instrument Data Channels spreadsheet; deployment date, position and all coefficients to be filled in from the instrument documentation after deployment.",
     "Unknown coefficients (null) skip the channels that need them (LK1, LDI, LKI, LAX, LAY, LE9); pressure (LDO), periods, voltages, LCE and LEF do not need them.",
     "calibration_threshold_kpa 'auto': halfway between the day's seafloor pressure and the lowest pressure while the calibration flag is set; replace by a number once the dead-weight pressure is known.",
     "seafloor_density_kg_m3: approximate in-situ seawater density at this depth (for the uplift estimate only)."
