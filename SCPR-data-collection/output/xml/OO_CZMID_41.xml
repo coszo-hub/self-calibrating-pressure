@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>COSZO</Source>
+  <Module>ObsPy 1.5.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-11-15T16:42:25.186401Z</Created>
+  <Network code="OO" startDate="2014-01-01T00:00:00.000000Z" restrictedStatus="open">
+    <Description>Ocean Observatories Initiative</Description>
+    <Station code="CZMID" startDate="2026-08-22T00:00:00.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">44.479722</Latitude>
+      <Longitude unit="DEGREES">-125.1525</Longitude>
+      <Elevation unit="METERS">-1238.0</Elevation>
+      <Site>
+        <Name>Mid Slope</Name>
+      </Site>
+      <Channel code="LDO" startDate="2026-08-22T00:00:00.000000Z" locationCode="41">
+        <Description>Pressure 2</Description>
+        <Latitude unit="DEGREES">44.479722</Latitude>
+        <Longitude unit="DEGREES">-125.1525</Longitude>
+        <Elevation unit="METERS">-1238.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>1.0</SampleRate>
+        <Sensor>
+          <Description>Calibrated Pressure - Self-Calibrating Pressure Recorder</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>Pa</Name>
+              <Description>pascals</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>Pa</Name>
+              <Description>pascals</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="Stage01">
+              <InputUnits>
+                <Name>Pa</Name>
+                <Description>pascals</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>Pa</Name>
+                <Description>pascals</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>DIGITAL (Z-TRANSFORM)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay unit="HERTZ">0.0</Delay>
+              <Correction unit="HERTZ">0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="LE1" startDate="2026-08-22T00:00:00.000000Z" locationCode="41">
+        <Description>Pressure 2 pressure period</Description>
+        <Latitude unit="DEGREES">44.479722</Latitude>
+        <Longitude unit="DEGREES">-125.1525</Longitude>
+        <Elevation unit="METERS">-1238.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>1.0</SampleRate>
+        <Sensor>
+          <Description>Calibrated Pressure - Self-Calibrating Pressure Recorder</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>s</Name>
+              <Description>seconds</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>s</Name>
+              <Description>seconds</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="Stage01">
+              <InputUnits>
+                <Name>s</Name>
+                <Description>seconds</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>s</Name>
+                <Description>seconds</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>DIGITAL (Z-TRANSFORM)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay unit="HERTZ">0.0</Delay>
+              <Correction unit="HERTZ">0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="LE2" startDate="2026-08-22T00:00:00.000000Z" locationCode="41">
+        <Description>Pressure 2 temperature period</Description>
+        <Latitude unit="DEGREES">44.479722</Latitude>
+        <Longitude unit="DEGREES">-125.1525</Longitude>
+        <Elevation unit="METERS">-1238.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>1.0</SampleRate>
+        <Sensor>
+          <Description>Calibrated Pressure - Self-Calibrating Pressure Recorder</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>s</Name>
+              <Description>seconds</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>s</Name>
+              <Description>seconds</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="Stage01">
+              <InputUnits>
+                <Name>s</Name>
+                <Description>seconds</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>s</Name>
+                <Description>seconds</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>DIGITAL (Z-TRANSFORM)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay unit="HERTZ">0.0</Delay>
+              <Correction unit="HERTZ">0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="LE3" startDate="2026-08-22T00:00:00.000000Z" locationCode="41">
+        <Description>Raw piston height, position sensor 2 (LVDT2)</Description>
+        <Latitude unit="DEGREES">44.479722</Latitude>
+        <Longitude unit="DEGREES">-125.1525</Longitude>
+        <Elevation unit="METERS">-1238.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>1.0</SampleRate>
+        <Sensor>
+          <Description>Calibrated Pressure - Self-Calibrating Pressure Recorder</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>V</Name>
+              <Description>volt</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>V</Name>
+              <Description>volt</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="Stage01">
+              <InputUnits>
+                <Name>V</Name>
+                <Description>volt</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>volt</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>DIGITAL (Z-TRANSFORM)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay unit="HERTZ">0.0</Delay>
+              <Correction unit="HERTZ">0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

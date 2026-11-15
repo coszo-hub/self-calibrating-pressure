@@ -1,0 +1,33 @@
+{
+  "network": "OO",
+  "station": "CZOFF",
+  "site": "Oregon Offshore (MJ01F, CE04OSCZ)",
+  "status": "planned",
+  "ref_des": "SCPRAC102",
+  "piweb_base": "http://piweb.ooirsn.uw.edu/scpr/data/",
+  "deployed": "2026-08-22",
+  "exclude_calibrations_before": null,
+  "position": {"latitude": 44.364722, "longitude": -124.963056, "elevation_m": -617,
+               "source": "COSZO Instrument Data Channels spreadsheet (approximate; update after the cruise)"},
+  "seafloor_density_kg_m3": 1030.3,
+  "gravity_m_s2": 9.806,
+  "calibration_threshold_kpa": "auto",
+  "gauges": {
+    "PARO1": {"id": "0001", "location": "40", "serial": null, "U0": null, "Y1": null, "Y2": null, "Y3": null},
+    "PARO2": {"id": "0002", "location": "41", "serial": null, "U0": null, "Y1": null, "Y2": null, "Y3": null}
+  },
+  "auxiliary": {
+    "barometer_kpa_per_v": null,
+    "prt_degc_per_v": null,
+    "tilt_x_deg": null,
+    "tilt_y_deg": null,
+    "lvdt1_mm": null,
+    "lvdt2_mm": null
+  },
+  "notes": [
+    "Planned COSZO station from the COSZO Instrument Data Channels spreadsheet; deployment date, position and all coefficients to be filled in from the instrument documentation after deployment.",
+    "Unknown coefficients (null) skip the channels that need them (LK1, LDI, LKI, LAX, LAY, LE9); pressure (LDO), periods, voltages, LCE and LEF do not need them.",
+    "calibration_threshold_kpa 'auto': halfway between the day's seafloor pressure and the lowest pressure while the calibration flag is set; replace by a number once the dead-weight pressure is known.",
+    "seafloor_density_kg_m3: approximate in-situ seawater density at this depth (for the uplift estimate only)."
+  ]
+}

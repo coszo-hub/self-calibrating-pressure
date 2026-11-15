@@ -1,0 +1,34 @@
+{
+  "network": "OO",
+  "station": "AXCC1",
+  "site": "Axial Seamount central caldera",
+  "status": "active",
+  "ref_des": "SCPRAA301",
+  "piweb_base": "http://piweb.ooirsn.uw.edu/scpr/data/",
+  "deployed": "2018-07-06",
+  "exclude_calibrations_before": "2018-07-07",
+  "position": {"latitude": 45.9548288, "longitude": -130.00924, "elevation_m": -1530.1,
+               "source": "OOI Regional Cabled Array"},
+  "seafloor_density_kg_m3": 1035.0,
+  "gravity_m_s2": 9.808,
+  "calibration_threshold_kpa": 15400.0,
+  "gauges": {
+    "PARO1": {"id": "0001", "location": "40", "serial": "136576",
+              "U0": 5.856127, "Y1": -3969.862, "Y2": -9294.779, "Y3": 0.0},
+    "PARO2": {"id": "0002", "location": "41", "serial": "132123",
+              "U0": 5.853962, "Y1": -3917.198, "Y2": -9346.861, "Y3": 0.0}
+  },
+  "auxiliary": {
+    "barometer_kpa_per_v": [23.9836, 49.7607],
+    "prt_degc_per_v": [1000.0, 245.8],
+    "tilt_x_deg": [10.377, 2.479],
+    "tilt_y_deg": [10.312, 2.551],
+    "lvdt1_mm": [1.222, 0.25],
+    "lvdt2_mm": [1.222, 0.25]
+  },
+  "notes": [
+    "Coefficients: Readme - Cabled SCPR Data files / Supplementary Materials (G. Sasagawa); gauge coefficients unchanged since July 2018.",
+    "barometer: kPa = a*V + b; prt: degC = a*V - b; tilt: deg = a*(V - b); lvdt: mm = a*(V - b) (G. Sasagawa, Nov 2026).",
+    "calibration_threshold_kpa: between the seafloor (~15 550 kPa) and dead-weight (~15 270 kPa) pressure."
+  ]
+}
